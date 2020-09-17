@@ -1,22 +1,24 @@
+
 # API Project: URL Shortener Microservice for freeCodeCamp
+Hosted  here: https://raahelpie-url-shortener.glitch.me/
 
-[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-project-urlshortener)](https://repl.it/github/freeCodeCamp/boilerplate-project-urlshortener)
+### Working
 
-### User Stories
-
-1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
-2. If I pass an invalid URL that doesn't follow the valid `http(s)://www.example.com(/more/routes)` format, the JSON response will contain an error like `{"error":"invalid URL"}`. *HINT*: to be sure that the submitted url points to a valid site you can use the function `dns.lookup(host, cb)` from the `dns` core module.
-3. When I visit the shortened URL, it will redirect me to my original link.
+1. Paste the URL you want to shorten in the form in the above webpage. When submitted, the form sends a POST request to the /api/shorturl/new endpoint.
+2. If your URL is valid, you will get JSON object as a response which has a code (id), you can replace the id in the :id part of this url: https://raahelpie-url-shortener.glitch.me/api/shorturl/:id/
+3. You will be redirected to your original link upon going to that link.
+4. If the URL is already present in the database, it will return the id corresponding to it, else - it will create a new document for it and assign a new id.
+5. YOU ONLY HAVE TO REMEMBER THE ID THE NEXT TIME YOU WANT TO GO BACK TO THE SAME PAGE.
 
 
 #### Creation Example:
 
-POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.google.com
+POST https://raahelpie-url-shortener.glitch.me/api/shorturl/new - body (urlencoded) :  url=https://www.google.com
 
 #### Usage:
 
-[this_project_url]/api/shorturl/3
+https://raahelpie-url-shortener.glitch.me/api/shorturl/5
 
 #### Will redirect to:
 
-https://www.freecodecamp.org/forum/
+https://raahelbaig.netlify.app/
