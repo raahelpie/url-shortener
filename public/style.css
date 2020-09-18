@@ -1,17 +1,17 @@
 /****** Main Styling ******/
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
-	line-height: 1.4em;
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #fff9f7;
+  text-align: center;
+  line-height: 1.4em;
 }
 
 .container {
-	padding: 0;
-	margin-top: 40px;
+  padding: 0;
+  margin-top: 40px;
 }
 
 h3 {
@@ -19,7 +19,7 @@ h3 {
 }
 
 .footer {
-	margin-top: 40px;
+  margin-top: 30px;
 }
 
 .user-stories {
@@ -35,10 +35,10 @@ code {
   background-color: #fff;
 }
 ol {
-	list-style-position: inside;
+  list-style-position: inside;
 }
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 li {
@@ -49,7 +49,7 @@ li {
 }
 
 a {
-	color: #2574A9;
+  color: #2574A9;
 }
 
 form {
